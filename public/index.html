@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="flex flex-col justify-center items-center w-full h-screen" style="background: #181818;">
+    <div class="flex flex-col justify-center items-center shadow-md shadow-black p-7 gap-4 w-[90vw] md:w-[50vw] lg:w-[40vw]">
+        <div class="flex flex-col justify-center items-center gap-4 w-full">
+            <div>
+                <img src="assets/first.jpg" alt="" class="h-[200px] w-[200px] rounded" id="albumArt">
+            </div>
+            <div>
+                <p class="text-xl text-white font-semibold" id="songName">Song Name</p>
+            </div>
+            <div>
+                <input id="seekBar" type="range" min="0" value="0" class="w-[200px]">
+            </div>
+            <div class="flex justify-between items-center w-[200px]">
+                <span id="currentTime" class="text-white">0:00</span>
+                <span id="duration" class="text-white">0:00</span>
+            </div>
+            <div class="flex justify-between items-center w-[200px]">
+                <img src="assets/previous.svg" alt="" class="h-[40px] w-[40px] cursor-pointer" style="filter: invert(1);" id="previous">
+                <img src="assets/play.svg" alt="" class="h-[40px] w-[40px] cursor-pointer" style="filter: invert(1); display: block;" id="play">
+                <img src="assets/pause.svg" alt="" class="h-[40px] w-[40px] cursor-pointer" style="filter: invert(1); display: none;" id="pause">               
+                <img src="assets/next.svg" alt="" class="h-[40px] w-[40px] cursor-pointer" style="filter: invert(1);" id="next">
+            </div>
+            <div>
+                <audio src="" id="audio"></audio>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
