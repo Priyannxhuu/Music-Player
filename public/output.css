@@ -592,6 +592,10 @@ video {
   height: 200px;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -678,6 +682,10 @@ video {
 
 .w-\[250px\] {
   width: 250px;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .max-w-\[250px\] {
